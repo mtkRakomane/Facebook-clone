@@ -1,0 +1,53 @@
+body {
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+
+}
+.card-body-friends {
+    text-align: left;
+}
+
+.card-body-birthday {
+    text-align: left;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:10px;
+    border: 2px solid black;
+    outline-style: outset;
+    outline-color: blue;
+    font-weight:bold;
+}
+
+.card-text {
+    font-size: small;
+}
+.card-comment{
+padding-right:70px;
+padding-top:30px;
+text-align:justify;
+}
+.form-control{
+padding:10px
+}
+.card-sidebar,.card-body-friends{
+    background-color:floralwhite;
+}
+.card-body-birthday{
+    background-color: peachpuff;
+}
+.footer{
+    background-color: dodgerblue;
+    text-align: center;
+    font-weight: bold;
+    display:flex;
+  
+}
+.card-main{
+   
+       
+      }
