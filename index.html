@@ -1,180 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Let'sChart</title>
+    <title>Let' Chat</title>
+    <link href="index.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
     <style>
         body {
-            background-color:whitesmoke;
+            background-color: whitesmoke;
             font-family: Arial, sans-serif;
-            color:azure;
         }
-      
-        .card-bodys,.card-bodyr,.list-unstyled{
-            font-family: italic;
-            background-color: lightblue;
-           font-size: medium;
-        }
-        .footer{
-            font-size: large;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif italic;
-            background-color: lightskyblue;
-        } 
-
-    
     </style>
+
 </head>
+
 <body>
-    <!--Header-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top mb-5 block">
    
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top mb-5 block"> 
-        <div>
-            <li><i class="bi bi-messenger text-white" style="font-size:25px;" ></i></li>
-        </div>
-        <a class="navbar-brand" href="#">LetsChat</a>        
+            <li><i class="bi bi-messenger text-white" style="font-size:25px;"></i></li>
         
-        
+        <a class="navbar-brand" href="#">Let's Chat</a>
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
+
                 <input type="text" placeholder="search..." class="searchbar">
                 <button type="button" class="btn btn-primary">
-                    Messages <span class="badge bg-danger">4</span>
-                  </button>
+                    messages <span class="badge bg-danger">4</span>
+                </button>
                 <li class="nav-item">
-                    
-                    <a class="nav-link" href="#" ><i class="bi bi-person"></i>Profile</a>
+                    <a class="nav-link" href="#"><i class="bi bi-person"></i>Profile</a>
                 </li>
 
                 <div class="dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-theme="dark">
-                      Menu
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                        data-bs-theme="dark">
+                        Menu
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Settings</a></li>
-                      <li><a class="dropdown-item" href="#">CreateAccount</a></li>
-                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">CreateAccount</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
                     </ul>
-                  </div>
-            
-            </ul>
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
-                <label class="form-check-label" for="mySwitch">Online</label>
-              </div>
-        </div>
-       
-    </nav>
-    <!--<div class="container-fluid mt-5">-->
+                </div>
 
-<div class="container-fluid pt-5 mt-3">
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid pt-5 mt-3">
         <div class="row">
             <div class="col-md-3">
-                <div class="card float-start">
-                    <div class="card-bodys">
-                        <h4 class="card-title">User Profile</h4>
-                        <div class="profile">
-                            <img src="https://www.allprodad.com/wp-content/uploads/2021/03/05-12-21-happy-people.jpg" alt="Profile Picture" width="50" height="50">
-                            <div>User Name: MTK Rakomane</div>
-                       
-
-                        <button type="button" class="btn btn-primary" placeholder="View Profile..." data-bs-toggle="tooltip" title="Profile!" >View Profile...</button>
-                        <hr>
-                        <li  class="list-unstyled"> <i class="bi bi-newspaper"></i><a href="#" class="text-decoration-none"> Feeds </a></li>
-                        <li class="list-unstyled" ><i class="bi bi-people-fill"></i><a href="#" class="text-decoration-none"> Groups </a></li>
-                        <li class="list-unstyled" ><i class="bi bi-shop"></i><a href="#" class="text-decoration-none"> MarketPlace </a></li>
-                        <li class="list-unstyled" ><i class="bi bi-camera-reels-fill"></i><a href="#" class="text-decoration-none"> Reels </a></li>
-                        <li class="list-unstyled" ><i class="bi bi-memory"></i><a href="#" class="text-decoration-none"> Memories </a></li>
-                        <li class="list-unstyled" ><i class="bi bi-save"></i><a href="#" class="text-decoration-none"> Saved </a></li>
-                       
+                <div class="card-sidebar">
+                    <div class="card-header bg-info text-white">
+                        Profile:
                     </div>
-              
+                    <div class="card-body">
+                        <h5 class="card-title">User Profile: Rakomane MTK</h5>
+
+                        <img src="https://www.allprodad.com/wp-content/uploads/2021/03/05-12-21-happy-people.jpg"
+                            class="img-fluid mb-3" alt="Placeholder image">
+                        <a href="#" class="btn btn-success">View Profile...</a>
+                        <hr>
+                        <div class="card-header bg-info text-white">
+                            Content:
+                        </div>
+                        <ul class="list-side">
+                            <li class="list-unstyled"> <i class="bi bi-newspaper"></i><a href="#"
+                                    class="text-decoration-none"> Feeds </a></li>
+                            <li class="list-unstyled"><i class="bi bi-people-fill"></i><a href="#"
+                                    class="text-decoration-none"> Groups </a></li>
+                            <li class="list-unstyled"><i class="bi bi-shop"></i><a href="#"
+                                    class="text-decoration-none"> MarketPlace </a></li>
+                            <li class="list-unstyled"><i class="bi bi-camera-reels-fill"></i><a href="#"
+                                    class="text-decoration-none"> Reels </a></li>
+                            <li class="list-unstyled"><i class="bi bi-memory"></i><a href="#"
+                                    class="text-decoration-none"> Memories </a></li>
+                            <li class="list-unstyled"><i class="bi bi-save"></i><a href="#"
+                                    class="text-decoration-none"> Saved </a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card float-start">
-                    <div class="card-body">
-                        
 
+            <div class="col-md-6">
+                <div class="card-main">
+                    <div class="card-header bg-info text-white">
+                        Timeline
+                    </div>
+                    <div class="card-body">
                         <div class="input-group mb-4">
                             <button class="btn btn-outline-primary" type="button">Post...</button>
                             <input type="text" class="form-control" placeholder="what's on your mind?">
-                          </div>
-
-                        <button class="add-pics/vid" data-bs-toggle="tooltip" title="Add...">Add photos/videos</button>
-                        <textarea id="add-comment" placeholder="Add Comments..."></textarea>
-                            <hr>
-                        <div class="card-body">
-                            <div class="row">
-                           <h5 class="card-title">Recent Posts</h5>
-                              <hr>
-                                <div class="container-fluid pt-5 mt-2">     
-                                   <p>New Profile Picture...Rakoamne MTK</p>
-                                    <img src="https://www.allprodad.com/wp-content/uploads/2021/03/05-12-21-happy-people.jpg" class="img-fluid" alt="Half-width image" >
-                                </div>
-                                        <div class="col-xs-2">
-                                          <button type="button" class="btn btn-primary like-btn mr-2" data-bs-toggle="tooltip" title="Like!" >
-                                            <i class="far fa-thumbs-up"></i> Like
-                                            </button>
-                                              <button type="button" class="btn btn-secondary comment-btn mr-2" data-bs-toggle="tooltip" title="Comment!" >
-                                               <i class="far fa-comment"></i> Comment
-                                               </button>
-                                                 <button type="button" class="btn btn-success share-btn" data-bs-toggle="tooltip" title="Share!" >
-                                                  <i class="fas fa-share"></i> Share
-                                                  </button>
-                                         </div>
-                            </div>
                         </div>
-                    </div>
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                      </ul>
-                </div>
-                
-            </div>
-            <div class="col-md-3">
-                <div class="card float-start">
-                    <div class="card-bodyr">
-                        <h4 class="card-title">Online Friends...</h4>
-                        <li class="list-unstyled"><a href="#" class="text-decoration-none"> <img src="https://hips.hearstapps.com/autoweek/assets/s3fs-public/130129986.jpg?crop=1xw:0.8xh;center,top&resize=1200:*" class="img-fluid rounded-circle" alt="Half-width image" width="27" height="27">
-                            Friend1 </a></li>
-                        <li class="list-unstyled"><i class="bi biheck"-person-c></i><a href="#" class="text-decoration-none"> <img src="https://neweralive.na/storage/images/2023/may/lloyd-sikeba.jpg" class="img-fluid rounded-circle" alt="Half-width image" width="27" height="27"> Friend2</a></li>
-                        <li class="list-unstyled"><a href="#" class="text-decoration-none"> <img src="https://t3.ftcdn.net/jpg/02/43/12/34/240_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" class="img-fluid rounded-circle" alt="Half-width image" width="27" height="27">
-                            Friend3</a></li>
-                        <li class="list-unstyled"><i class="bi bi-person-square"></i></i><a href="#" class="text-decoration-none"> Friend4</a></li>
-                        <li class="list-unstyled"><i class="bi bi-people"></i><a href="#" class="text-decoration-none"> Friend5 ...</a></li>
-                        
+                        <hr>
+                        <button class="add-pics/vid" data-bs-toggle="tooltip" title="Add...">Add photos/videos</button>
+                        <textarea class="card-comment" id="add-comment" placeholder="Add Comments..."></textarea>
+                        <hr>
+                        <div class="card-header bg-info text-white">
+                            Recent Posts...
+                        </div>
+                        <h1 class="card-text"><img
+                                src="https://www.allprodad.com/wp-content/uploads/2021/03/05-12-21-happy-people.jpg"
+                                class="img-fluid mb-3" alt="Placeholder image" width="25" height="25">Rakomane mtk</h1>
+                        <img src="https://www.allprodad.com/wp-content/uploads/2021/03/05-12-21-happy-people.jpg"
+                            class="img-fluid mb-3" alt="Placeholder image" width="300" height="300">
+                        <p><small>If you want to live a happy life, tie it to a goal, not to people or things.</small>
+                        </p>
+                        <div class="col-xs-2">
+                            <button type="button" class="btn btn-primary like-btn mr-2" data-bs-toggle="tooltip"
+                                title="Like!">
+                                <i class="far fa-thumbs-up"></i> Like
+                            </button>
+                            <button type="button" class="btn btn-secondary comment-btn mr-2" data-bs-toggle="tooltip"
+                                title="Comment!">
+                                <i class="far fa-comment"></i> Comment
+                            </button>
+                            <button type="button" class="btn btn-success share-btn" data-bs-toggle="tooltip"
+                                title="Share!">
+                                <i class="fas fa-share"></i> Share
+                            </button>
+                        </div>
                         <hr>
 
-                        <h4>Birthday Notifications...</h4>
-                        <li class="list-unstyled"><i class="bi bi-balloon-heart"></i><a href="#" class="text-decoration-none"> Today is friend3 birthday and others...</a></li>
-                        <li class="list-unstyled"><i class="bi bi-balloon-heart"></i><a href="#" class="text-decoration-none"> tomorrow is Friend2 birthday</a></li>
-              
+                        <h1 class="card-text"><img
+                                src="https://t3.ftcdn.net/jpg/02/43/12/34/240_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+                                class="img-fluid mb-3" alt="Placeholder image" width="25" height="25">Friend1</h1>
+                        <img src="https://t3.ftcdn.net/jpg/02/43/12/34/240_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+                            class="img-fluid mb-3" alt="Placeholder image" width="300" height="300">
+                        <div class="col-xs-2">
+                            <p class="card-text">Judge me when you are perfect....</p>
+                            <button type="button" class="btn btn-primary like-btn mr-2" data-bs-toggle="tooltip"
+                                title="Like!">
+                                <i class="far fa-thumbs-up"></i> Like
+                            </button>
+                            <button type="button" class="btn btn-secondary comment-btn mr-2" data-bs-toggle="tooltip"
+                                title="Comment!">
+                                <i class="far fa-comment"></i> Comment
+                            </button>
+                            <button type="button" class="btn btn-success share-btn" data-bs-toggle="tooltip"
+                                title="Share!">
+                                <i class="fas fa-share"></i> Share
+                            </button>
+                        </div>
+                        <hr>
+
                     </div>
                 </div>
-            
             </div>
-            <div class="footer">
-                <footer class="container">
-                    <p>&copy; Terms & Conditions apply</p> 
-                    <p>&copy; Help</p>
-                  </footer>
+
+            <div class="col-md-3">
+                <div class="card-Right">
+                    <div class="card-header bg-info text-white">
+                        Friends...
+                    </div>
+                    <div class="card-body-friends">
+                        <h5 class="card-title">Online Friends:</h5>
+                        <ul>
+                            <li class="list-unstyled"><a href="#" class="text-decoration-none"> <img
+                                        src="https://hips.hearstapps.com/autoweek/assets/s3fs-public/130129986.jpg?crop=1xw:0.8xh;center,top&resize=1200:*"
+                                        class="img-fluid rounded-circle" alt="Half-width image" width="27" height="27">
+                                    Friend1 </a></li>
+                            <li class="list-unstyled"><a href="#" class="text-decoration-none"> <img
+                                        src="https://neweralive.na/storage/images/2023/may/lloyd-sikeba.jpg"
+                                        class="img-fluid rounded-circle" alt="Half-width image" width="27" height="27">
+                                    Friend2</a></li>
+                            <li class="list-unstyled"><a href="#" class="text-decoration-none"> <img
+                                        src="https://t3.ftcdn.net/jpg/02/43/12/34/240_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+                                        class="img-fluid rounded-circle" alt="Half-width image" width="27" height="27">
+                                    Friend3</a></li>
+                            <li class="list-unstyled"><a href="#" class="text-decoration-none"> <img
+                                        src="https://media.wired.com/photos/598e35994ab8482c0d6946e0/master/w_1600,c_limit/phonepicutres-TA.jpg"
+                                        class="img-fluid rounded-circle" alt="Half-width image" width="27" height="27">
+                                    Friend4</a></li>
+                            <li class="list-unstyled"><a href="#" class="text-decoration-none"><img
+                                        src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                        class="img-fluid rounded-circle" alt="Half-width image" width="27" height="27">
+                                    Friend5 ...</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="card-header bg-info text-white">
+                    Birthdays...
+                </div>
+                <div class="card-body-birthday">
+                    <h5 class="card-title">Friends Birthadays</h5>
+                    <ul>
+                        <li class="list-unstyled"><i class="bi bi-balloon-heart"></i><a href="#"
+                                class="text-decoration-none"> Today is friend3 birthday and others...</a></li>
+                        <li class="list-unstyled"><i class="bi bi-balloon-heart"></i><a href="#"
+                                class="text-decoration-none"> tomorrow is Friend2 birthday</a></li>
+
+                    </ul>
+
+                </div>
             </div>
         </div>
+
+        <div class="footer">
+            <footer class="container">
+                <p>&copy; Terms & Conditions apply</p>
+                <p>&copy; Help</p>
+            </footer>
+        </div>
     </div>
-    
-    
+    </div>
 
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-</html>
 
+</html>
